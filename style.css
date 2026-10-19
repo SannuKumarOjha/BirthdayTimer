@@ -1,0 +1,116 @@
+:root {
+    --smaller: .75;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #ffd54f;
+    display: flex;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif;
+}
+
+.container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
+
+
+#box {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    background-color: rgba(0, 42, 255, 0.758);
+    border: 2px solid rebeccapurple;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.2;
+}
+
+.span-text {
+    display: none;
+}
+
+.wishes {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 21%, #FF2929 44%, #3705FF 50%, #CF1512 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
